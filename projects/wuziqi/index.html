@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>五子棋</title>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    <div class="music">&#xe600;</div>
+    <!--<audio src="img/夏婉安 - 六楼.mp3" autoplay></audio>-->
+    <!--<div class="top">-->
+        <input type="button" value="开始游戏" id="star">
+        <span id="mode1">游戏模式 :</span>
+        <div class="ual">
+        玩家对战<input type="radio" name="mod" id="bbc"checked>
+        人机对战<input type="radio"  name="mod" id="mode" >
+        <!--</div>-->
+    </div>
+    <div class="container">
+        <canvas width="600px" height="600px"></canvas>
+    </div>
+    <div class="shadow">
+        <h1></h1>
+        <input type="button" value="重新开始" id="chong">
+        <input type="button" value="绘制棋谱" id="output">
+        <div class="imgbox"></div>
+        <a href="#" id="download">下载</a>
+    </div>
+</body>
+<script src="js/index.js"></script>
+</html>

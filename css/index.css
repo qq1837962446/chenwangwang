@@ -1,0 +1,577 @@
+/*body{*/
+    /*background-color: #4725ae;*/
+/*}*/
+.section{
+    text-align: center;
+    font-size: 60px;
+    background-color: #fafafa;
+}
+#sec{
+    background-color: #fafafa;
+}
+img{
+    width: 100%;
+    height: 100%;
+}
+canvas{
+    background: rgba(0,0,0,0.7);
+    display: block;
+    float: left;
+    /*margin:0 75px 0 75px;*/
+}
+/*canvas{*/
+    /*background: rgba(0,0,0,0.7);*/
+    /*display: block;*/
+    /*float: left;*/
+    /*margin:0 75px 0 75px;*/
+/*}*/
+.jl{
+    height: 200px;
+}
+.section{
+    position: relative;
+    overflow: hidden;
+}
+.top-top{
+    width:900px;
+    height:100px;
+    font-size: 90px;
+    line-height: 100px;
+    text-align: center;
+    position: absolute;
+    left: 260px;
+    top: 350px;
+    color: #fff;
+    z-index: 2;
+    /*display: none;*/
+}
+.top-top1{
+    width:900px;
+    height:100px;
+    font-size: 90px;
+    font-weight:bold;
+    line-height: 100px;
+    text-align: center;
+    position: absolute;
+    left: 163px;
+    top: 310px;
+    color:rgba(250,250,250,0.5);
+    /*display: none;*/
+}
+.left1{
+    animation: top-donghua 3s forwards;
+}
+@keyframes top-donghua {
+    0%{
+        transform:rotate(0) scale(0);
+
+    }
+    100%{
+        transform:rotate(720deg) scale(1);
+
+    }
+}
+.top-shijian{
+    animation:top-donghua 1.5s ;
+    display: block;
+}
+img{
+    width:100%;
+    height:100%;
+}
+.zhezhao{
+    width:100%;
+    height:100%;
+    position: absolute;
+    top:0;
+    left:0;
+    background:rgba(0,0,0,0.2);
+}
+.box{
+    width: 200px;
+    height: 200px;
+    margin: 70px auto;
+}
+.xbox{
+    width: 100%;
+    height: 100%;
+    background-color: orange;
+    border-radius: 50%;
+    position: relative;
+}
+.xbox img{
+    width: 100%;
+    height: 100%;
+    display: block;
+    border-radius: 50%;
+}
+.zhezhao1{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.0);
+    position: absolute;
+    border-radius: 50%;
+    top: 0;
+    left: 0;
+    border: 5px red solid;
+    box-sizing: border-box;
+    border-top-color: yellow;
+    border-left-color: yellow;
+    transition: all 3s ease;
+}
+.box:hover .zhezhao1{
+    background-color: rgba(0, 0, 0, 0.6);
+    transform: rotate(90deg);
+}
+.top-bottom{
+    width:100%;
+    height:50px;
+    position: absolute;
+    left:0;
+    bottom: 100px;
+    font-size: 40px;
+    color: rgba(250,250,250,0.6);
+    line-height: 50px;
+    text-align: center;
+}
+.min-top {
+    width:100%;
+    height:100px;
+    position: absolute;
+    top: 10px;
+    left:0;
+    /*background-color: #cc1da0;*/
+    line-height: 100px;
+    text-align: center;
+    font-size: 60px;
+    display:none;
+}
+.min{
+    width:400px;
+    height:400px;
+    /*background-color: #0f87df;*/
+    position: absolute;
+    left: 150px;
+    top: 200px;
+    display:none;
+}
+.min1{
+    width:400px;
+    height:400px;
+    background:rgba(0,0,0,0.4);
+    position: absolute;
+    right: 200px;
+    top: 200px;
+    display:none;
+}
+.min1 p{
+    width:100%;
+    height:30px;
+    margin-top: 3px;
+    font-size: 16px;
+    line-height: 30px;
+    text-align: left;
+    color: #fff;
+    opacity:0;
+}
+.min1 .P1{
+    animation: to 1s forwards ease 1.2s;
+}
+.min1 .P2{
+    animation: to 1s forwards ease 1.3s;
+}
+.min1 .P3{
+    animation: to 1s forwards ease 1.6s;
+}
+.min1 .P4{
+    animation: to 1s forwards ease 1.9s;
+}
+.min1 .P5{
+    animation: to 1s forwards ease 2.1s;
+}
+.min1 .P6{
+    animation: to 1s forwards ease 2.4s;
+}
+.ziti-now{
+    animation: to 1s forwards ease 2.4s;
+}
+@-webkit-keyframes to{
+    0%{
+        transform:translateX(300px);
+       opacity:1;
+    }
+    100%{
+        transform:translateX(0px);
+        opacity:1;
+    }
+}
+.min1 p:nth-child(6){
+    width:100%;
+    height:120px;
+    /*background-color: #fff;*/
+    margin-top: 3px;
+    font-size: 16px;
+    /*line-height: 40px;*/
+    /*text-align: left;*/
+    color: #fff;
+}
+.ziti-now{
+    width:320px;
+    height:170px;
+    float:right;
+    /*background-color: #cc1da0;*/
+    font-size: 17px;
+    position: absolute;
+    right: 0;
+    top: 173px;
+    opacity:0;
+}
+@keyframes num {
+    0%{
+        transform:translateX(-550px);
+    }
+    100%{
+        transform:translateX(0);
+    }
+}
+.num1{
+    animation:num 1s  ;
+    display: block;
+}
+@keyframes tt {
+    0%{
+        transform:translateX(550px);
+    }
+    100%{
+        transform:translateX(0);
+    }
+}
+.rr{
+    animation:tt 1.5s ;
+    display: block;
+}
+@keyframes yy {
+    0%{
+        transform:translateY(-150px);
+    }
+    100%{
+        transform:translateY(0);
+    }
+}
+.to1{
+    animation:yy 1.5s ;
+    display: block;
+}
+.box2{
+    width:240px;
+    height:50px;
+    /*background-color: #cc1da0;*/
+    position: absolute;
+    left:60px;
+    bottom: 80px;
+    font-size: 30px;
+    line-height: 50px;
+    text-align: center;
+    color: rgba(250,250,250,0.7)
+}
+.box3{
+    width:400px;
+    height:50px;
+    /*background-color: #cc1da0;*/
+    position: absolute;
+    left:316px;
+    bottom: 80px;
+    font-size: 30px;
+    line-height: 50px;
+    text-align: center;
+    color: rgba(250,250,250,0.7)
+}
+.box4{
+    width:320px;
+    height:50px;
+    /*background-color: #cc1da0;*/
+    position: absolute;
+    right:319px;
+    bottom: 80px;
+    font-size: 30px;
+    line-height: 50px;
+    text-align: center;
+    color: rgba(250,250,250,0.7)
+}
+.box5{
+    width:240px;
+    height:50px;
+    /*background-color: #cc1da0;*/
+    position: absolute;
+    right:60px;
+    bottom: 80px;
+    font-size: 30px;
+    line-height: 50px;
+    text-align: center;
+    color: rgba(250,250,250,0.7)
+}
+.slide{
+    position: relative;
+}
+.tupian{
+    width:1000px;
+    height:600px;
+    position: absolute;
+    top:30px;
+    left:260px;
+    display:none;
+    opacity: 0.6;
+}
+@keyframes wuzi {
+    0%{
+        transform:rotate(0);
+        width:0;
+        height:0;
+    }
+    100%{
+        transform:rotate(720deg);
+        width:1000px;
+        height:600px;
+    }
+}
+.wuzi-shijian{
+    animation:wuzi 1.5s ;
+    display: block;
+}
+
+.dianji{
+    width:50px;
+    height:345px;
+    /*background-color:rgba(250,250,250,0.4);*/
+    position: absolute;
+    top:110px;
+    left:110px;
+    font-size: 50px;
+    text-align: center;
+    color: red;
+    display:none;
+}
+@keyframes dianji1 {
+    0%{
+        transform:translateX(-250px);
+    }
+    100%{
+        transform:translateX(0);
+    }
+}
+.dianji2{
+    animation:dianji1 1.5s ;
+    display: block;
+}
+
+span{
+    margin-top: 20px;
+    height: 70px;
+    display: block;
+}
+section[id^=My]{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top:0;
+    left:0;
+}
+/*项目介绍开始*/
+.zhongxin{
+    width: 200px;
+    height: 200px;
+    border:1px solid red;
+    z-index: 3;
+    border-radius: 50%;
+    margin:0 auto;
+    margin-top: 200px;
+}
+.projects{
+    width: 150px;
+    height: 150px;
+    border:1px solid red;
+    border-radius:50%;
+    float:left;
+    opacity: 0;
+    transition: all .5s;
+    background:yellowgreen;
+}
+.projects-one{
+    position: absolute;
+    top:100px;
+    left:200px;
+    background:green;
+    /*display: none;*/
+}
+.projects-two{
+    position: absolute;
+    top:300px;
+    left:250px;
+    /*display: none;*/
+}
+.projects-three{
+    position: absolute;
+    top:480px;
+    left:380px;
+}
+.projects-four{
+    position: absolute;
+    top:100px;
+    right:200px;
+}
+.projects-five{
+    position: absolute;
+    top:300px;
+    right:250px;
+}
+.projects-six{
+    position: absolute;
+    top:480px;
+    right:380px;
+}
+.projects-seven{
+    position: absolute;
+    right:0;
+    left:0;
+    margin:auto;
+    top:500px;
+}
+@keyframes leftIn {
+    0%{
+        transform:translateX(-300px);
+    }
+    100%{
+        transform:translateX(0);
+    }
+}
+.leftIn{
+    animation:leftIn 1.5s;
+    display: block;
+}
+/*进度圈开始*/
+.loopData{
+    width: 100%;
+    height: 100%;
+    position:absolute;
+    top:-60px;
+    left:0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.skill{
+    width: 100%;
+    height: 100px;
+    /*border:1px solid red;*/
+    position: absolute;
+    left:0;
+    top:50px;
+    display: flex;
+    justify-content: space-around;
+}
+.skill-one{
+    width: 30%;
+    height: 100px;
+    /*background: yellow;*/
+    float:left;
+    text-align: center;
+    line-height: 100px;
+    font-size: 30px;
+    color: #fff;
+}
+@font-face {
+    font-family: 'iconfont';  /* project id 449486 */
+    src: url('http://at.alicdn.com/t/font_449486_pk62thvfo4leg66r.eot');
+    src: url('http://at.alicdn.com/t/font_449486_pk62thvfo4leg66r.eot?#iefix') format('embedded-opentype'),
+    url('http://at.alicdn.com/t/font_449486_pk62thvfo4leg66r.woff') format('woff'),
+    url('http://at.alicdn.com/t/font_449486_pk62thvfo4leg66r.ttf') format('truetype'),
+    url('http://at.alicdn.com/t/font_449486_pk62thvfo4leg66r.svg#iconfont') format('svg');
+}
+.iconfont{
+    font-family:"iconfont" !important;
+    font-size:30px;
+    font-style:normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.2px;
+    -moz-osx-font-smoothing: grayscale;
+}
+.tupian-one{
+    width:1000px;
+    height:600px;
+    position: absolute;
+    top:30px;
+    left:260px;
+    display:none;
+    opacity: 0.6;
+}
+.dianji-kaishi{
+    width:50px;
+    height:345px;
+    /*background-color:rgba(250,250,250,0.4);*/
+    position: absolute;
+    top:110px;
+    left:110px;
+    font-size: 50px;
+    text-align: center;
+    color: red;
+    display:none;
+}
+@keyframes dianji-kaishi1 {
+    0%{
+        transform:translateX(-250px);
+    }
+    100%{
+        transform:translateX(0);
+    }
+}
+.dianji-kaishi2{
+    animation:dianji-kaishi1 1.5s ;
+    display: block;
+}
+@keyframes dazi {
+    0%{
+        transform:rotate(0);
+        width:0;
+        height:0;
+    }
+    100%{
+        transform:rotate(720deg);
+        width:1000px;
+        height:600px;
+    }
+}
+.dazi-shijian{
+    animation:dazi 1.5s ;
+    display: block;
+}
+iframe{
+    width:100%;
+    height:100%;
+    position: relative;
+}
+.p2-li1{
+    width:172px;
+    height:182px;
+    border-radius: 50%;
+}
+.p2-li2{
+    width:172px;
+    height:182px;
+    margin-left: 5px;
+    border-radius: 50%;
+}
+.p2-li3{
+    width:172px;
+    height:182px;
+    margin-left: 10px;
+}
+.p2-li4{
+    width:172px;
+    height:182px;
+    margin-left: 15px;
+}
+.p2-li5{
+    width:172px;
+    height:182px;
+    margin-left: 20px;
+}
